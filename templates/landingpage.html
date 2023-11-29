@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>JoTeam - Pelatihan Coding Python Online</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=fallback" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=fallback" />
+	<style>
+		* {
+			font-family: Inter, sans-serif;
+		}
+
+		.font-poppins {
+			font-family: Poppins;
+		}
+
+		.btn-success {
+			background-color: #4caf4f;
+		}
+
+		.active {
+			background-color: #4caf4f !important;
+		}
+	</style>
+</head>
+
+<body style="background-color: #ffffff">
+	<header class="container-fluid">
+		<nav class="navbar navbar-light shadow p-3 mb-5 bg-body-tertiary rounded">
+			<div class="container">
+				<a class="navbar-brand font-poppins" href="#">Jo Team</a>
+				<ul class="nav nav-pills justify-content-beetween">
+					<li class="nav-item pe-3">
+						<a class="nav-link link-dark font-poppins" href="#">Home</a>
+					</li>
+					<li class="nav-item pe-3">
+						<a class="nav-link link-dark font-poppins" href="#">Learn</a>
+					</li>
+					<li class="nav-item pe-3">
+						<a class="nav-link link-dark font-poppins" href="#">About</a>
+					</li>
+					<li class="nav-item pe-3">
+						<button class="btn btn-success font-poppins border-0" href="#">
+							Login
+						</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="row g-0 position-relative mb-5" style="background-color: #f5f7fa">
+		<div class="col-md-6 pt-5 pb-5 ps-5">
+			<h1 style="font-weight: bold" class="mt-5">
+				Lessons and insights from zero to hero
+			</h1>
+			<p>
+				Belajar coding <strong>Python</strong> dari
+				<strong>Nol</strong> hingga <strong>Expert</strong>
+			</p>
+			<a href="#" class="btn btn-success border-0">Mulai sekarang</a>
+		</div>
+		<div class="col-md-6 p-5 text-center">
+			<img src="{{url_for('static', filename='images/Illustration.png')}}" class="" alt="..." />
+		</div>
+	</div>
+	<div class="row g-0 position-relative">
+		<div class="col-md-12 text-center">
+			<h2 style="font-weight: 700">Kenapa Belajar Python di Jo Team?</h2>
+		</div>
+		<div class="col-md-12 text-center">
+			<div class="container-xxl">
+				<div class="row g-0 position-relative">
+					<div class="col-md-4 p-5">
+						<div class="card border-0 shadow p-3 mb-5 bg-white rounded">
+							<img src="{{url_for('static', filename='images/iconTerjangkau.png')}}"
+								class="card-img-top img-fluid img-thumbnail border-0" alt="..." />
+							<div class="card-body">
+								<h4 class="card-title" style="font-weight: bold">
+									Terjangkau
+								</h4>
+								<p class="card-text" style="font-weight: 300">
+									Dengan materi pembelajaran yang disajikan dengan gratis
+									maupun berbayar.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 p-5">
+						<div class="card border-0 shadow p-3 mb-5 bg-white rounded">
+							<img src="{{url_for('static', filename='images/iconTerpercaya.png')}}"
+								class="card-img-top img-fluid img-thumbnail border-0" alt="..." />
+							<div class="card-body">
+								<h4 class="card-title" style="font-weight: bold">
+									Terpercaya
+								</h4>
+								<p class="card-text" style="font-weight: 300">
+									Bekerja sama dengan partner, kami menyelenggarakan beberapa
+									program untuk python developer.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 p-5">
+						<div class="card border-0 shadow p-3 mb-5 bg-white rounded">
+							<img src="{{url_for('static', filename='images/iconTerhubung.png')}}"
+								class="card-img-top img-fluid img-thumbnail border-0" alt="..." />
+							<div class="card-body">
+								<h4 class="card-title" style="font-weight: bold">
+									Terhubung
+								</h4>
+								<p class="card-text" style="font-weight: 300">
+									Jo Team bukan hanya tempat belajar, tapi komunitas yang
+									memotivasi dan menginspirasi.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid">
+		<div class="shadow-sm p-3 bg-white rounded text-center">
+			Copyright &copy; 2023 - <span id="now-year"></span>
+			<strong>JoTeam</strong>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+		integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		$(document).ready(function () {
+			const currentYear = new Date().getFullYear();
+			$("#now-year").text(currentYear);
+			$(".nav-link")
+				.on("mouseenter", function () {
+					$(this).addClass("active");
+				})
+				.on("mouseleave", function () {
+					$(this).removeClass("active");
+				});
+		});
+	</script>
+</body>
+
+</html>

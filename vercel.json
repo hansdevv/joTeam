@@ -1,0 +1,22 @@
+{
+	"builds": [
+		{
+			"src": "main.py",
+			"use": "@vercel/python"
+		}
+	],
+	"routes": [
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/(.*)",
+			"dest": "/main.py"
+		}
+	],
+	"env": {
+		"FLASK_APP": "main.py",
+		"FLASK_ENV": "production",
+		"STATIC_DIR": "static"
+	}
+}
